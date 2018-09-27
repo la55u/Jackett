@@ -6,15 +6,21 @@
   type: semi-private
   encoding: UTF-8
   links:
-    - https://yggtorrent.is/
+    - https://yggtorrent.to/
   legacylinks:
+    - https://yggtorrent.is/
     - https://yggtorrent.com/
     - https://ww1.yggtorrent.com/
+    - https://www.yggtorrent.is/
+    - https://ww1.yggtorrent.is/
+    - https://ww2.yggtorrent.is/
+    - https://ww3.yggtorrent.is/
+    - https://ww4.yggtorrent.is/
 
   caps:
     categorymappings:
       - {id: 2145, cat: TV, desc: "Film/Vidéo"}
-      - {id: 2178, cat: TV/Anime, desc: "Film/Vidéo : Animation"}
+      - {id: 2178, cat: Movies, desc: "Film/Vidéo : Animation"} # changed to movies, see #3553
       - {id: 2179, cat: TV/Anime, desc: "Film/Vidéo : Animation Série"}
       - {id: 2180, cat: TV, desc: "Film/Vidéo : Concert"}
       - {id: 2181, cat: TV, desc: "Film/Vidéo : Documentaire"}
@@ -108,10 +114,11 @@
         FRENCH : "FRENCH"
         MULTI.FRENCH: "MULTI.FRENCH"
         ENGLISH: "ENGLISH"
+        MULTI.ENGLISH: "MULTI.ENGLISH"
   login:
     method: form
     path: /
-    form: form[action$="/user/login"]
+    form: "#user-login"
     inputs:
       id: "{{ .Config.username }}"
       pass: "{{ .Config.password }}"
@@ -124,8 +131,8 @@
 
   search:
     paths:
-      - path: "/engine/search?category={{ .Config.category }}&name={{ .Keywords }}&description=&file=&uploader=&sub_category=&do=search"
-      - path: "/engine/search?category={{ .Config.category }}&name={{ .Keywords }}&description=&file=&uploader=&sub_category=&do=search&page=50"
+      - path: "/engine/search?category={{ .Config.category }}&name={{ .Keywords }}&description=&file=&uploader=&sub_category=&do=search&order=desc&sort=publish_date"
+      - path: "/engine/search?category={{ .Config.category }}&name={{ .Keywords }}&description=&file=&uploader=&sub_category=&do=search&order=desc&sort=publish_date&page=50"
 
     rows:
       selector: "table.table > tbody > tr"
@@ -243,6 +250,11 @@
             args: " ago"
       size:
         selector: "td:nth-child(6)"
+        filters:
+          - name: replace
+            args: ["o", "B"]
+      grabs:
+        selector: "td:nth-child(7)"
       seeders:
         text: 0
       seeders:

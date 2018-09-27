@@ -87,6 +87,7 @@ function loadJackettSettings() {
         $("#jackett-prerelease").attr('checked', data.prerelease);
         $("#jackett-logging").attr('checked', data.logging);
         $("#jackett-omdbkey").val(data.omdbkey);
+        $("#jackett-omdburl").val(data.omdburl);
         var password = data.password;
         $("#jackett-adminpwd").val(password);
         if (password != null && password != '') {
@@ -730,16 +731,16 @@ function updateReleasesRow(row)
     labels.empty();
 
     if (IMDBId) {
-        labels.append('\n<a href="http://www.imdb.com/title/tt' + IMDBId + '/" class="label label-imdb" alt="IMDB" title="IMDB">IMDB</a>');
+        labels.append('\n<a href="http://www.imdb.com/title/tt' + ("000000" + IMDBId).slice(-7) + '/" class="label label-imdb" alt="IMDB" title="IMDB">IMDB</a>');
     }
 
     if (!isNaN(DownloadVolumeFactor)) {
         if (DownloadVolumeFactor == 0) {
             labels.append('\n<span class="label label-success">FREELEECH</span>');
         } else if (DownloadVolumeFactor < 1) {
-            labels.append('\n<span class="label label-primary">' + DownloadVolumeFactor * 100 + '%DL</span>');
+            labels.append('\n<span class="label label-primary">' + (DownloadVolumeFactor * 100).toFixed(0) + '%DL</span>');
         } else if (DownloadVolumeFactor > 1) {
-            labels.append('\n<span class="label label-danger">' + DownloadVolumeFactor * 100 + '%DL</span>');
+            labels.append('\n<span class="label label-danger">' + (DownloadVolumeFactor * 100).toFixed(0) + '%DL</span>');
         }
     }
 
@@ -747,7 +748,7 @@ function updateReleasesRow(row)
         if (UploadVolumeFactor == 0) {
             labels.append('\n<span class="label label-warning">NO UPLOAD</span>');
         } else if (UploadVolumeFactor != 1) {
-            labels.append('\n<span class="label label-info">' + UploadVolumeFactor * 100 + '%UL</span>');
+            labels.append('\n<span class="label label-info">' + (UploadVolumeFactor * 100).toFixed(0) + '%UL</span>');
         }
     }
 }
@@ -1150,6 +1151,7 @@ function bindUIButtons() {
         var jackett_prerelease = $("#jackett-prerelease").is(':checked'); 
         var jackett_logging = $("#jackett-logging").is(':checked');
         var jackett_omdb_key = $("#jackett-omdbkey").val();
+        var jackett_omdb_url = $("#jackett-omdburl").val();
 
         var jackett_proxy_url = $("#jackett-proxy-url").val();
         var jackett_proxy_type = $("#jackett-proxy-type").val();
@@ -1166,6 +1168,7 @@ function bindUIButtons() {
             logging: jackett_logging,
             basepathoverride: jackett_basepathoverride,
             omdbkey: jackett_omdb_key,
+            omdburl: jackett_omdb_url,
             proxy_type: jackett_proxy_type,
             proxy_url: jackett_proxy_url,
             proxy_port: jackett_proxy_port,

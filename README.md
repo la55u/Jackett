@@ -17,32 +17,35 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
 
 #### Supported Systems
 * Windows using .NET 4.6.1 or above [Download here](https://www.microsoft.com/net/framework/versions/net461).
-* Linux and macOS using Mono 5.8 or above. [Download here](http://www.mono-project.com/download/). Earlier versions of mono may work, but some trackers may fail to negotiate SSL correctly, and others may cause Jackett to crash when used.
+* Linux and macOS using Mono 5.8 or above. [Download here](http://www.mono-project.com/download/).
 
 ### Supported Public Trackers
  * 1337x
  * Anidex
  * Anime Tosho
  * AniRena
+ * AudioBookBay
+ * BTstor.net
  * btbit
  * BTDB
- * BT-Scene
  * cpasbien
  * ETTV
  * ExtraTorrent.ag
+ * ExtraTorrentClone
  * EZTV
  * Frozen Layer
  * GkTorrent
  * Horrible Subs
- * Idope
+ * IdopeClone
  * Il Corsaro Nero <!-- maintained by bonny1992 -->
  * Il Corsaro Blu
  * Isohunt2
+ * KATcrs
  * KickAssTorrent
  * KickAssTorrent (thekat.se clone)
  * LimeTorrents
  * MagnetDL
- * NextTorrent
+ * MejorTorrent <!-- maintained by ivandelabeldad -->
  * Newpct (aka: tvsinpagar, descargas2020, torrentlocura, torrentrapid, etc)
  * Nyaa.si
  * Nyaa-Pantsu
@@ -50,18 +53,19 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * RARBG
  * RuTor
  * ShowRSS
+ * SkyTorrentsClone
  * sukebei.Nyaa.si
  * sukebei-Pantsu
  * The Pirate Bay
  * TNTVillage <!-- maintained by bonny1992 -->
  * Tokyo Toshokan
  * Torlock
+ * TorrentCouch
  * Torrent Downloads
+ * TorrentGalaxy.org
  * Torrent9
- * TorrentKim
  * Torrentz2
  * World Wide Torrents
- * YIFY (YTS)
  * YTS.ag
  * Zooqle
 
@@ -70,6 +74,7 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * CzTorrent
  * Deildu
  * Gay-Torrents.net
+ * Gay-Torrents.org
  * Kinozal
  * LostFilm.tv
  * Mega-Bliz
@@ -89,6 +94,7 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
 ### Supported Private Trackers
  * 2 Fast 4 You
  * 3D Torrents
+ * 720pier
  * Abnormal
  * Acid-Lounge
  * AlphaRatio
@@ -109,6 +115,7 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * bB
  * BeyondHD
  * BIGTorrent
+ * BigTower
  * Bit-City Reloaded
  * BIT-HDTV
  * Bithorlo
@@ -124,8 +131,9 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * Brasil Tracker
  * BroadcastTheNet
  * BrokenStones
+ * BTGigs
  * BTNext
- * BTWorld
+ * BTXpress
  * Carpathians
  * CCFBits
  * CGPeers
@@ -146,7 +154,6 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * Elit Tracker
  * Elite-Tracker
  * Empornium
- * EoT-Forum
  * eStone
  * Ethor.net (Thor's Land)
  * FANO.IN
@@ -157,7 +164,7 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * FunFile
  * FunkyTorrents
  * Fuzer
- * GayTorrent.ru
+ * GAYtorrent.ru
  * GazelleGames
  * Gfxnews
  * GFXPeers
@@ -168,9 +175,11 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * Greek Team
  * HacheDe
  * Hardbay
+ * HD4Free (HD4)
  * HD-Forever
  * HD-Only
  * HD-Space
+ * HD-Spain
  * HD-Torrents
  * HD-Bits.com
  * HDBits
@@ -182,6 +191,7 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * HDTorrents.it
  * Hebits
  * Hon3y HD
+ * HQSource
  * Hyperay
  * ICE Torrent
  * I Love Classics
@@ -206,6 +216,7 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * NCore
  * Nebulance
  * New Real World
+ * NordicBits
  * Norbits <!-- added by DiseaseNO but no longer maintained? -->
  * notwhat.cd
  * Ourbits
@@ -222,6 +233,9 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * PuntoTorrent
  * Racing4Everyone (R4E)
  * Redacted (PassTheHeadphones)
+ * Red Star Torrent
+ * Redtopia (RED)
+ * RetroFlix
  * RevolutionTT
  * RGU
  * RoDVD
@@ -240,9 +254,9 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * SportsCult
  * SportHD
  * Superbits
- * Synthesiz3r
  * Tasmanit
  * TBPlus
+ * TehConnection.me
  * TenYardTracker
  * The Empire
  * The Geeks
@@ -271,7 +285,6 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * TorrentSeeds
  * Torrent-Syndikat
  * TOrrent-tuRK (TORK)
- * TorrentWTF
  * TorViet
  * ToTheGlory
  * TranceTraffic
@@ -284,11 +297,12 @@ Developer note: The software implements the [Torznab](https://github.com/Sonarr/
  * Waffles
  * World-In-HD
  * WorldOfP2P
+ * x-ite.me
  * x264
  * xBytesV2
  * XSpeeds
  * Xthor
- * Your Exotic Torrents
+ * ExoticaZ (Your Exotic Torrents)
  * Zamunda.net
  * Zelka.org
 
@@ -334,10 +348,16 @@ If you want to run it with a user without a /home directory you need to add `Env
 
 Mono must be compiled with the Roslyn compiler (default), using MCS will cause "An error has occurred." errors (See https://github.com/Jackett/Jackett/issues/2704).
 
+### Installation on Linux via Ansible
+
+On a RHEL/Centos 7 system: [linuxhq.jackett](https://galaxy.ansible.com/linuxhq/jackett)
+
+On an Ubuntu 16 system: [chrisjohnson00.jackett](https://galaxy.ansible.com/chrisjohnson00/jackett)
+
 ## Installation on macOS
 
 ### Prerequisites
-Install [Mono 4.6](http://www.mono-project.com/download/#download-mac) or better (using the latest pkg installer is recommended).
+Install [Mono 5.8](http://www.mono-project.com/download/#download-mac) or better (using the latest pkg installer is recommended).
  * Setup ssl support by running `curl -sS https://curl.haxx.se/ca/cacert.pem | cert-sync --user /dev/stdin`
 
 ### Install as service
@@ -368,6 +388,18 @@ Example config for apache:
     ProxyPass http://127.0.0.1:9117
     ProxyPassReverse http://127.0.0.1:9117
 </Location>
+```
+
+Example config for nginx:
+```
+location /jackett {
+	proxy_pass http://127.0.0.1:9117;
+	proxy_set_header X-Real-IP $remote_addr;
+	proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+	proxy_set_header X-Forwarded-Proto $scheme;
+	proxy_set_header X-Forwarded-Host $http_host;
+	proxy_redirect off;
+}
 ```
 
 ## Troubleshooting
@@ -403,10 +435,28 @@ All contributions are welcome just send a pull request.  Jackett's framework all
 ## Building from source
 
 ### Windows
+* Install the .NET Core [SDK](https://www.microsoft.com/net/download/windows)
 * Open the Jackett solution in Visual Studio 2017 (version 15.7 or above)
 * Right click on the Jackett solution and click 'Rebuild Solution' to restore nuget packages
-* Select Jackett.Console as startup project
+* Select Jackett.Server as startup project
+* In the drop down menu of the run button select "Jackett.Server" instead of "IIS Express"
 * Build/Start the project
+
+### OSX
+NOTE: msbuild is included in the mono release. 
+* Install Homebrew https://brew.sh
+* open terminal
+* brew install nuget mono
+* git clone https://github.com/Jackett/Jackett.git
+* cd Jackett/src
+* nuget restore Jackett.sln
+
+NOTE: if you get the error "NU1102: Unable to find package Microsoft.AspNetCore with version (>= 2.1.2)" while restoring packages, you'll need to install it manually.https://www.microsoft.com/net/download/thank-you/dotnet-sdk-2.1.302-macos-x64-installer then delete the entire project directory and restart from a new clone
+
+* msbuild Jackett.Server/Jackett.Server.csproj /t:Build /p:Configuration=Debug
+* curl -sS https://curl.haxx.se/ca/cacert.pem | cert-sync --user /dev/stdin
+* mono Jackett.Server/bin/Debug/JackettServer.exe
+
 
 ### Linux
 
@@ -415,8 +465,8 @@ sudo apt install mono-complete nuget msbuild # install build tools (debian/ubunt
 git clone https://github.com/Jackett/Jackett.git
 cd Jackett/src
 nuget restore Jackett.sln # prepare dependencies
-msbuild Jackett.Console/Jackett.Console.csproj /t:Build /p:Configuration=Debug # compile
-mono Jackett.Console/bin/Debug/JackettConsole.exe # run jackett
+msbuild Jackett.Server/Jackett.Server.csproj /t:Build /p:Configuration=Debug # compile
+mono Jackett.Server/bin/Debug/JackettServer.exe # run jackett
 ```
 
 ## Screenshots
